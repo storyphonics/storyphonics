@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Phonics Chant</title>
+</head>
+<body>
+  <h1 id="title">Story Phonics Chant</h1>
+
+  <audio id="audio" controls></audio>
+
+  <h2>Lyrics</h2>
+  <pre id="lyrics">Loading lyrics...</pre>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const title = params.get("title") || "Story Phonics Chant";
+    const audio = params.get("audio");
+    const lyrics = params.get("lyrics");
+
+    document.getElementById("title").textContent = title;
+
+    if (audio) {
+      document.getElementById("audio").src = audio;
+    }
+
+    if (lyrics) {
+      fetch(lyrics)
+        .then(res => res.text())
+        .then(text => {
+          document.getElementById("lyrics").textContent = text;
+        })
+        .catch(() => {
+          document.getElementById("lyrics").textContent = "Lyrics not found.";
+        });
+    }
+  </script>
+</body>
+</html>
