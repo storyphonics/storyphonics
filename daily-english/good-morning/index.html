@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: "Fredoka", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(36px, 10vw, 64px);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    .cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 24px;
+      border-radius: 16px;
+    }
+    audio {
+      display: block;
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+    .lyrics {
+      margin: 0;
+      padding: 0 4px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: "Fredoka", sans-serif;
+      font-size: max(22px, 5.5vw);
+      font-weight: 700;
+      line-height: 1.8;
+      color: #000000;
+      text-align: center;
+    }
+    @media (min-width: 600px) {
+      main {
+        padding: 40px 28px 64px;
+      }
+      .lyrics {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Good Morning</h1>
+    <img class="cover" src="cover.png" alt="Good Morning cover">
+    <audio controls preload="metadata">
+      <source src="goodmorningchant.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="lyrics">Good morning, Mom and Dad!
+Good morning, sleepyhead!
+
+Good morning, Mom and Dad!
+Good morning, sleepyhead!
+
+Good morning, Mom and Dad!
+Good morning, sleepyhead!</div>
+  </main>
+</body>
+</html>
