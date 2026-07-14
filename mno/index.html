@@ -1,5 +1,64 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MNO Chant</title><style>body{font-family:Arial,sans-serif;margin:20px;max-width:800px}img{max-width:100%;height:auto}pre{white-space:pre-wrap;font-size:1.1em}</style></head><body><h1>MNO Chant</h1><img src="cover.png" alt="cover"><audio controls style="width:100%"><source src="mnochant.mp3" type="audio/mpeg"></audio><pre>Hello, hello!
-Let's learn today!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MNO Chant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #000;
+      font-family: "Fredoka", sans-serif;
+    }
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(36px, 10vw, 64px);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 22px;
+    }
+    audio {
+      display: block;
+      width: 100%;
+      margin: 0 auto 28px;
+    }
+    .lyrics {
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      font-size: clamp(22px, 6vw, 32px);
+      font-weight: 700;
+      line-height: 1.8;
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MNO Chant</h1>
+    <img class="cover" src="cover.png" alt="MNO Story Phonics cover">
+    <audio controls preload="metadata">
+      <source src="mnochant.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="lyrics">Hello, hello!
+Let&#x27;s learn today!
 
 M for Moon!
 Moon, moon!
@@ -15,4 +74,7 @@ M! N! O!
 
 Moon!
 Nest!
-Octopus!</pre></body></html>
+Octopus!</div>
+  </main>
+</body>
+</html>
