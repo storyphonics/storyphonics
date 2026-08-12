@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nice to Meet You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #fff; color: #000; }
+    body {
+      font-family: "Fredoka", sans-serif;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(34px, 9vw, 56px);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+    .cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 22px;
+      border-radius: 14px;
+    }
+    audio {
+      display: block;
+      width: 100%;
+      margin: 0 auto 28px;
+    }
+    .lyrics {
+      margin: 0;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      font-family: "Fredoka", sans-serif;
+      font-size: max(22px, 5.5vw);
+      font-weight: 700;
+      line-height: 1.8;
+      color: #000;
+      text-align: center;
+    }
+    @media (min-width: 600px) {
+      main { padding: 36px 28px 64px; }
+      .lyrics { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Nice to Meet You</h1>
+    <img class="cover" src="cover.png" alt="Nice to Meet You cover">
+    <audio controls preload="metadata">
+      <source src="nice-to-meet-youchant.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="lyrics">[Verse]
+Nice to meet you!
+Nice to meet you, too!
+Nice to meet you!
+Nice to meet you, too!
+
+[Chorus]
+Nice to meet you!
+Nice to meet you, too!
+Hello, hello!
+Nice to meet you!
+
+[Verse]
+Nice to meet you!
+Nice to meet you, too!
+Smile and say,
+Nice to meet you!
+
+[Chorus]
+Nice to meet you!
+Nice to meet you, too!
+Hello, hello!
+Nice to meet you!
+
+[Outro]
+Nice to meet you!
+Nice to meet you, too!
+</div>
+  </main>
+</body>
+</html>
