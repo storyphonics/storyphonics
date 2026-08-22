@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Old Are You?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: "Fredoka", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(34px, 9vw, 58px);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+    .cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 62vh;
+      object-fit: contain;
+      margin: 0 auto 22px;
+      border-radius: 18px;
+    }
+    audio {
+      display: block;
+      width: 100%;
+      margin: 0 auto 28px;
+    }
+    .lyrics {
+      margin: 0;
+      white-space: pre-wrap;
+      font-size: clamp(22px, 6vw, 32px);
+      line-height: 1.8;
+      font-weight: 700;
+      color: #000000;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+    @media (min-width: 700px) {
+      main {
+        padding: 38px 28px 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>How Old Are You?</h1>
+    <img class="cover" src="cover.png" alt="How Old Are You? cover">
+    <audio controls preload="metadata">
+      <source src="howoldareyouchant.mp3" type="audio/mpeg">
+      Your browser does not support the audio player.
+    </audio>
+    <div class="lyrics">How old are you?
+How old are you?
+
+I&#x27;m six years old.
+I&#x27;m six years old.
+
+One, two, three!
+Four, five, six!
+I&#x27;m six! I&#x27;m six!
+
+How old are you?
+I&#x27;m six years old.
+
+Seven, eight, nine, ten!
+One more time!
+
+How old are you?
+I&#x27;m six years old.</div>
+  </main>
+</body>
+</html>
