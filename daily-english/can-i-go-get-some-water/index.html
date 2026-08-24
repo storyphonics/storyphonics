@@ -1,60 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Can I Go Get Some Water?</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #ffffff;
+    }
+
     body {
       margin: 0;
+      min-height: 100vh;
       background: #ffffff;
       color: #000000;
       font-family: "Fredoka", sans-serif;
+      font-weight: 700;
     }
+
     main {
       width: min(100%, 760px);
       margin: 0 auto;
-      padding: 24px 18px 48px;
+      padding: 24px 18px 56px;
       text-align: center;
     }
+
     h1 {
       margin: 0 0 22px;
-      font-size: clamp(34px, 8vw, 56px);
-      line-height: 1.15;
+      color: #000000;
+      font-size: clamp(34px, 9vw, 58px);
       font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
     }
-    img {
+
+    .cover {
       display: block;
       width: 100%;
       height: auto;
-      margin: 0 auto 22px;
-      border-radius: 18px;
+      margin: 0 auto 24px;
+      border-radius: 16px;
     }
+
     audio {
+      display: block;
       width: 100%;
-      margin-bottom: 28px;
+      margin: 0 auto 30px;
     }
+
     .lyrics {
+      margin: 0;
+      color: #000000;
+      font-family: "Fredoka", sans-serif;
+      font-size: clamp(22px, 6vw, 30px);
+      font-weight: 700;
+      line-height: 1.8;
+      text-align: center;
       white-space: pre-wrap;
       overflow-wrap: anywhere;
-      font-size: clamp(22px, 5.5vw, 30px);
-      line-height: 1.8;
-      font-weight: 700;
-      color: #000000;
-      text-align: center;
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Can I Go Get Some Water?</h1>
-    <img src="cover.png" alt="Can I Go Get Some Water? cover">
+    <img class="cover" src="cover.png" alt="Can I Go Get Some Water? cover">
     <audio controls preload="metadata">
       <source src="canigogetsomewaterchant.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
     <div class="lyrics">Can I go get some water?
 Can I go get some water?
